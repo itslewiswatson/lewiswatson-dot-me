@@ -37,6 +37,14 @@ const useStyles = createUseStyles({
     body: {
       backgroundColor: theme.colors.dark,
       fontFamily: "Helvetica, sans-serif",
+
+      "@media (prefers-color-scheme: dark)": {
+        backgroundColor: theme.colors.dark,
+      },
+
+      "@media (prefers-color-scheme: light)": {
+        backgroundColor: theme.colors.offWhite,
+      },
     },
   },
   main: {
@@ -69,17 +77,25 @@ const useStyles = createUseStyles({
   intro: {},
   hello: {
     color: theme.colors.primary,
-    fontSize: 20,
+    fontSize: 22,
   },
   name: {
     color: theme.colors.offWhite,
-    fontSize: "clamp(30px, 6vw, 80px)",
+    fontSize: "clamp(30px, 5vw, 80px)",
     margin: 0,
     marginTop: 10,
+
+    "@media (prefers-color-scheme: dark)": {
+      color: theme.colors.offWhite,
+    },
+
+    "@media (prefers-color-scheme: light)": {
+      color: theme.colors.dark,
+    },
   },
   tagline: {
     color: theme.colors.secondary,
-    fontSize: "clamp(30px, 6vw, 80px)",
+    fontSize: "clamp(30px, 5vw, 80px)",
     margin: 0,
     marginTop: 10,
   },
@@ -87,8 +103,8 @@ const useStyles = createUseStyles({
   bio: {
     marginTop: 20,
     color: theme.colors.secondary,
-    maxWidth: "500px",
-    fontSize: 18,
+    maxWidth: "600px",
+    fontSize: 20,
   },
 });
 
