@@ -73,7 +73,7 @@ const useStyles = createUseStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    height: "100vh",
+    paddingTop: "10vh",
 
     paddingLeft: 150,
     paddingRight: 150,
