@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/global.css"],"names":[],"mappings":"AAAA,kBACI,eACJ,CAEA,oCACI,aAAc,CACd,oBACJ,CAEA,KACI,QACJ","file":"main.4931a565.chunk.css","sourcesContent":["h1, h2, h3, h4, h5, h6 {\n    font-weight: 600;\n}\n\na, a:visited, a:hover, a:active, a:link { \n    color: #b5838d;\n    text-decoration: none;\n}\n\nbody {\n    margin: 0;\n}"]}
