@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className={classes.main}>
       <div className={classes.content}>
-        <div className={classes.intro}>
+        <div>
           <span className={classes.hello}>Hi, my name is</span>
           <h2 className={classes.name}>Lewis Watson.</h2>
           <h3 className={classes.tagline}>
@@ -20,11 +20,12 @@ const App = () => {
           <p>
             I'm a Brisbane based software developer with a keen interest in
             product. I have a passion for design and all things involving
-            people. I currently work for a startup named{" "}
+            people. I currently work for{" "}
             <a target="_blank" href="https://rooy.co" rel="noreferrer">
               ROOY
             </a>{" "}
-            where I focus on productisation of the model.
+            where I focus on designing and building brilliant products for
+            forward-thinking organisations.
           </p>
         </div>
       </div>
@@ -50,6 +51,7 @@ const useStyles = createUseStyles({
   main: {
     display: "flex",
     flexDirection: "column",
+    justifyContent: "center",
     height: "100vh",
 
     paddingLeft: 150,
@@ -74,7 +76,6 @@ const useStyles = createUseStyles({
       marginRight: 0,
     },
   },
-  intro: {},
   hello: {
     color: theme.colors.primary,
     fontSize: 22,
@@ -102,7 +103,7 @@ const useStyles = createUseStyles({
 
   bio: {
     marginTop: 20,
-    color: theme.colors.secondary,
+    color: theme.colors.dark,
     maxWidth: "600px",
     fontSize: 20,
   },
