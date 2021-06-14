@@ -8,14 +8,14 @@ export const Bio = () => {
   return (
     <div className={classes.bio}>
       <p>
-        I'm a Brisbane based software developer with a keen interest in product.
+        I am a Brisbane based software developer with a keen interest in product.
         I have a passion for design and all things involving people. I currently
         work for{" "}
         <a target="_blank" href="https://rooy.co" rel="noreferrer">
           ROOY
         </a>{" "}
-        where I focus on designing and building brilliant products for
-        forward-thinking organisations.
+        where I focus on designing and building brilliant products 
+        that get used by forward-thinking organisations.
       </p>
     </div>
   );
