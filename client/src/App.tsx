@@ -10,7 +10,7 @@ const App = () => {
     <div className={classes.main}>
       <div className={classes.content}>
         <div>
-          <span className={classes.hello}>Hi, my name is</span>
+          <span className={classes.hello}>Hello, my name is</span>
           <h2 className={classes.name}>Lewis Watson.</h2>
           <h3 className={classes.tagline}>
             I'm passionate about building tech for good.
