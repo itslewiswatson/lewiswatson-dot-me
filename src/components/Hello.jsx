@@ -10,7 +10,7 @@ export const Hello = () => {
       <span className={classes.hello}>Hello, my name is</span>
       <h2 className={classes.name}>Lewis Watson.</h2>
       <h3 className={classes.tagline}>
-        I'm passionate about building tech for good.
+        I'm passionate about the human side of tech.
       </h3>
     </div>
   );

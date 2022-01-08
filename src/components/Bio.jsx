@@ -8,14 +8,13 @@ export const Bio = () => {
   return (
     <div className={classes.bio}>
       <p>
-        I am a Brisbane based software developer with a keen interest in product.
-        I have a passion for design and all things involving people. I currently
-        work for{" "}
-        <a target="_blank" href="https://rooy.co" rel="noreferrer">
-          ROOY
+        I am a product nerd, with a passion for design and all things involving people.
+        Currently, I work for {" "}
+        <a target="_blank" href="https://rexsoftware.com" rel="noreferrer">
+          Rex Software
         </a>{" "}
-        where I focus on designing and building brilliant products 
-        that get used by forward-thinking organisations.
+        in Brisbane as an Associate Product Manager where I focus on bringing a strategic product
+        view to day-to-day tasks, product discovery, and contributing to the longer-term product strategy.
       </p>
     </div>
   );
