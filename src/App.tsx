@@ -51,7 +51,7 @@ const useStyles = createUseStyles({
   },
   content: {
     margin: "0 auto",
-    maxWidth: 1000,
+    maxWidth: 800,
 
     [`@media (max-width: 1080px)`]: {
       marginLeft: 0,

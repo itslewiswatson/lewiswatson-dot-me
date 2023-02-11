@@ -7,26 +7,59 @@ export const Bio = () => {
 
   return (
     <div className={classes.bio}>
-      <p>
-        I am a product nerd, with a passion for design and all things involving people.
-        Currently, I work for {" "}
-        <a target="_blank" href="https://rexsoftware.com" rel="noreferrer">
-          Rex Software
+      <div className={classes.child}>
+        I'm enthusiastic about building great products, with an interest for
+        what makes people tick.
+      </div>
+      <div className={classes.child}>
+        I'm currently a Product Manager at{" "}
+        <a
+          target="_blank"
+          href="https://rexsoftware.com"
+          rel="noreferrer"
+          className={classes.link}
+        >
+          Rex
         </a>{" "}
-        in Brisbane as an Associate Product Manager where I focus on bringing a strategic product
-        view to day-to-day tasks, product discovery, and contributing to the longer-term product strategy.
-      </p>
+        where my focus is pioneering product growth through clever strategic initiatives.
+      </div>
     </div>
   );
 };
 
 const useStyles = createUseStyles({
+  link: {
+    "@media (prefers-color-scheme: dark)": {
+      "&:hover": {
+        color: theme.colors.secondary,
+      },
+      color: theme.colors.primary,
+    },
+
+    "@media (prefers-color-scheme: light)": {
+      "&:hover": {
+        color: theme.colors.secondary,
+      },
+      color: theme.colors.primary,
+    },
+  },
   bio: {
+    display: "flex",
+    flexDirection: "column",
+
+    alignItems: "center",
+    alignContent: "center",
+    alignSelf: "center",
+    justifyContent: "center",
+    justifyItems: "center",
+    justifySelf: "center",
+    width: "100%",
+
     marginTop: 20,
     color: theme.colors.dark,
-    maxWidth: "600px",
     fontSize: 20,
     marginBottom: 50,
+    rowGap: '20px',
 
     "@media (prefers-color-scheme: dark)": {
       color: theme.colors.offWhite,
@@ -36,4 +69,7 @@ const useStyles = createUseStyles({
       color: theme.colors.dark,
     },
   },
+  child: {
+    width: "100%",
+  }
 });

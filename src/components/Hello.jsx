@@ -6,20 +6,22 @@ export const Hello = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.container}>
       <span className={classes.hello}>Hello, my name is</span>
       <h2 className={classes.name}>Lewis Watson.</h2>
       <h3 className={classes.tagline}>
-        I'm passionate about the human side of tech.
+        I'm passionate about growth.
       </h3>
     </div>
   );
 };
 
 const useStyles = createUseStyles({
+  container: {
+  },
   hello: {
     color: theme.colors.primary,
-    fontSize: 22,
+    fontSize: 22,  
   },
   name: {
     color: theme.colors.offWhite,
@@ -37,7 +39,7 @@ const useStyles = createUseStyles({
   },
   tagline: {
     color: theme.colors.secondary,
-    fontSize: "clamp(30px, 5vw, 80px)",
+    fontSize: "clamp(30px, 2vw, 40px)",
     margin: 0,
     marginTop: 10,
   },

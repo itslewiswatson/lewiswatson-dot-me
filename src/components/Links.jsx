@@ -37,15 +37,21 @@ const useStyles = createUseStyles({
   },
   icon: {
     borderRadius: 10,
-    color: theme.colors.primary,
+    color: theme.colors.secondary,
     backgroundColor: theme.colors.dark,
 
     "@media (prefers-color-scheme: dark)": {
+      "&:hover": {
+        color: theme.colors.secondary,
+      },
       color: theme.colors.primary,
       backgroundColor: theme.colors.dark,
     },
 
     "@media (prefers-color-scheme: light)": {
+      "&:hover": {
+        color: theme.colors.secondary,
+      },
       color: theme.colors.primary,
       backgroundColor: theme.colors.offWhite,
     },
