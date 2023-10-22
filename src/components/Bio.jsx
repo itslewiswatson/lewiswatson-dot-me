@@ -8,8 +8,7 @@ export const Bio = () => {
   return (
     <div className={classes.bio}>
       <div className={classes.child}>
-        I'm enthusiastic about building great products, with an interest for
-        what makes people tick.
+        I'm young, ambitious, and driven, with an unwavering enthusiasm for building great products that resonate with customers.
       </div>
       <div className={classes.child}>
         I'm currently a Product Manager at{" "}
